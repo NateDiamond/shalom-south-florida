@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, Radio, Music, Users, MapPin, Headphones, Star, Phone, Mail } from "lucide-react"
-import { Facebook, Twitter } from "lucide-react"
+import { siFacebook, siX } from "simple-icons"
 
 export default function HomePage() {
   return (
@@ -135,7 +135,7 @@ export default function HomePage() {
               </div>
               <div className="relative">
                 <div className="aspect-square bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center">
-                  <img src="https://shalomsouthflorida.com/images/roni.jpg" />
+                  <img src="images/roni.jpg" />
                   {/* <Radio className="w-24 h-24 text-primary/50" /> */}
                 </div>
               </div>
@@ -151,8 +151,11 @@ export default function HomePage() {
             <h3 className="font-heading font-bold text-3xl mb-4">Ways to Listen</h3>
             <p className="text-muted-foreground text-lg">Tune in every Sunday from 9:30-11:00 AM ET</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="sm:col-span-2 lg:col-span-1 flex justify-center">
+              <img src="images/coverage.png" className="rounded-lg max-h-100"/>
+            </div>
+            <Card className="sm:row-start-2 sm:col-start-1 lg:row-start-1 lg:col-start-2"> 
               <CardHeader>
                 <CardTitle className="font-heading flex items-center">
                   <MapPin className="w-5 h-5 mr-2 text-primary" />
@@ -178,7 +181,7 @@ export default function HomePage() {
                 </div>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="row-start-2 col-start-2 lg:row-start-1 lg:col-start-3">
               <CardHeader>
                 <CardTitle className="font-heading flex items-center">
                   <Headphones className="w-5 h-5 mr-2 text-primary" />
@@ -220,11 +223,13 @@ export default function HomePage() {
 
             <div className="flex justify-center gap-4 mb-8">
               <Button variant="outline" size="sm" className="flex items-center gap-2 bg-transparent">
-                <Twitter className="w-4 h-4" />
+                <div dangerouslySetInnerHTML={{ __html: siX.svg}}>
+                </div>
                 Follow on X
               </Button>
               <Button variant="outline" size="sm" className="flex items-center gap-2 bg-transparent">
-                <Facebook className="w-4 h-4" />
+              <div dangerouslySetInnerHTML={{ __html: siFacebook.svg}}>
+              </div>
                 Like on Facebook
               </Button>
             </div>
@@ -270,7 +275,8 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="pt-6 flex flex-col gap-4 justify-start items-center">
+          <div className="border-t border-gray-300 my-4" />
+          <div className="pt-6 flex flex-col gap-4 justify-start">
             <div className="font-semibold">Please send us any new albums for consideration or press releases with two weeks advance notice to:</div>
             <div>Attn: Roni<br />Shalom South Florida<br />c/o VCMG Live<br />8895 N Military Trail, Suite 206c<br />Palm Beach Gardens, FL 33410></div>
           </div>
