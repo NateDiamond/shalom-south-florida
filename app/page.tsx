@@ -209,7 +209,7 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <h3 className="font-heading font-bold text-3xl mb-4">Sponsors</h3>
           </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 place-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 place-items-center">
             <img src="images/sponsor1.png" className="max-w-50"/>
             <img src="images/sponsor2.webp" className="max-w-50"/>
             <img src="images/sponsor3.png" className="max-w-50"/>
