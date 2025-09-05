@@ -193,7 +193,7 @@ export default function HomePage() {
                     The True Oldies Channel
                   </a> 
                 </Button>
-                <div className="flex gap-2 items-center w-full bg-transparent px-6 py-2 border rounded text-center">
+                <div className="flex gap-2 justify-center lg:justify-start items-center w-full bg-transparent px-6 py-2 border rounded text-center">
                   <Music className="w-4 h-4 mr-2" />
                   Most Radio Apps
                 </div>
