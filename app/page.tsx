@@ -188,17 +188,15 @@ export default function HomePage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <Button className="w-full bg-transparent" variant="outline">
-                  <Radio className="w-4 h-4 mr-2" />
-                  www.oldiessouthflorida.com
+                  <a className="flex gap-2 items-center" href="https://trueoldiesfla.com/" target="_blank">
+                    <Radio className="w-4 h-4 mr-2" />
+                    The True Oldies Channel
+                  </a> 
                 </Button>
-                <Button className="w-full bg-transparent" variant="outline">
+                <div className="flex gap-2 items-center w-full bg-transparent px-6 py-2 border rounded text-center">
                   <Music className="w-4 h-4 mr-2" />
                   Most Radio Apps
-                </Button>
-                <Button className="w-full bg-accent hover:bg-accent/90">
-                  <Headphones className="w-4 h-4 mr-2" />
-                  Listen to Recent Shows
-                </Button>
+                </div>
               </CardContent>
             </Card>
           </div>
