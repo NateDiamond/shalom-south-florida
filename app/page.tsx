@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, Clock, Radio, Music, Users, MapPin, Headphones, Star, Phone, Mail } from "lucide-react"
-import { siFacebook, siX } from "simple-icons"
+import { siFacebook, siGofundme, siX } from "simple-icons"
 
 export default function HomePage() {
   return (
@@ -28,7 +28,7 @@ export default function HomePage() {
                 Listen
               </a>
               <a href="#podcasts" className="text-foreground hover:text-primary transition-colors">
-                Podcasts
+                Sponsors
               </a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors">
                 Contact
@@ -222,15 +222,23 @@ export default function HomePage() {
             </p>
 
             <div className="flex justify-center gap-4 mb-8">
-              <Button variant="outline" size="sm" className="flex items-center gap-2 bg-transparent">
-                <div dangerouslySetInnerHTML={{ __html: siX.svg}}>
-                </div>
-                Follow on X
+              <Button variant="outline" size="sm" className="bg-transparent">             
+                <a href="https://x.com/shalomsouthFL" target="_blank" className="flex gap-2 items-center">
+                  <div dangerouslySetInnerHTML={{ __html: siX.svg}}></div>
+                  Follow on X
+                </a>
               </Button>
-              <Button variant="outline" size="sm" className="flex items-center gap-2 bg-transparent">
-              <div dangerouslySetInnerHTML={{ __html: siFacebook.svg}}>
-              </div>
-                Like on Facebook
+              <Button variant="outline" size="sm" className="bg-transparent">
+                <a href="https://www.facebook.com/ShalomSouthFL" target="_blank" className="flex gap-2 items-center">
+                  <div dangerouslySetInnerHTML={{ __html: siFacebook.svg}}></div>
+                  Like on Facebook
+                </a>
+              </Button>
+              <Button variant="outline" size="sm" className="bg-transparent">
+                <a href="https://www.gofundme.com/f/help-keep-shalom-south-florida-on-the-air" target="_blank" className="flex gap-2 items-center">
+                  <div dangerouslySetInnerHTML={{ __html: siGofundme.svg}}></div>
+                  Support on GoFundMe
+                </a>
               </Button>
             </div>
 
