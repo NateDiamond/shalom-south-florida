@@ -153,7 +153,7 @@ export default function HomePage() {
             <div className="sm:col-span-2 lg:col-span-1 flex justify-center">
               <img src="images/coverage.png" className="rounded-lg max-h-100"/>
             </div>
-            <Card className="sm:row-start-2 sm:col-start-1 lg:row-start-1 lg:col-start-2"> 
+            <Card className="row-start-2 col-start-1 lg:row-start-1 lg:col-start-2"> 
               <CardHeader>
                 <CardTitle className="font-heading flex items-center">
                   <MapPin className="w-5 h-5 mr-2 text-primary" />
@@ -179,7 +179,7 @@ export default function HomePage() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="row-start-2 col-start-2 lg:row-start-1 lg:col-start-3">
+            <Card className="row-start-3 sm:row-start-2 col-start-1 sm:col-start-2 lg:row-start-1 lg:col-start-3">
               <CardHeader>
                 <CardTitle className="font-heading flex items-center">
                   <Headphones className="w-5 h-5 mr-2 text-primary" />
@@ -244,7 +244,7 @@ export default function HomePage() {
               Bringing Jewish music, culture, and community to South Florida every Sunday morning since 1986.
             </p>
 
-            <div className="flex justify-center gap-4 mb-8">
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Button variant="outline" size="sm" className="bg-transparent">             
                 <a href="https://x.com/shalomsouthFL" target="_blank" className="flex gap-2 items-center">
                   <div dangerouslySetInnerHTML={{ __html: siX.svg}}></div>
