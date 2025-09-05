@@ -27,7 +27,7 @@ export default function HomePage() {
               <a href="#listen" className="text-foreground hover:text-primary transition-colors">
                 Listen
               </a>
-              <a href="#podcasts" className="text-foreground hover:text-primary transition-colors">
+              <a href="#sponsors" className="text-foreground hover:text-primary transition-colors">
                 Sponsors
               </a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors">
@@ -39,7 +39,7 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 bg-gradient-to-br from-card via-background to-card/50">
+      <section className="py-20 bg-gradient-to-br from-card via-background to-card/50">
         <div className="container mx-auto px-4 text-center">
           <Badge className="mb-4 bg-accent text-accent-foreground">Live Every Sunday</Badge>
           <h2 className="font-heading font-bold text-4xl md:text-6xl mb-6 text-balance">
@@ -61,19 +61,17 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary hover:bg-primary/90">
-              <Headphones className="w-5 h-5 mr-2" />
-              Listen Live
-            </Button>
-            <Button size="lg" variant="outline">
-              <Music className="w-5 h-5 mr-2" />
-              Browse Previous Shows
+              <a href="#listen" className="flex items-center gap-2">
+                <Headphones className="w-5 h-5 mr-2" />
+                Listen Live
+              </a>
             </Button>
           </div>
         </div>
       </section>
 
       {/* Features Grid */}
-      <section className="py-16" id="about">
+      <section className="py-20" id="about">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h3 className="font-heading font-bold text-3xl mb-4">What Makes Us Special</h3>
@@ -114,7 +112,7 @@ export default function HomePage() {
       </section>
 
       {/* Host Section */}
-      <section className="py-16 bg-card/30">
+      <section className="py-20 bg-card/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -145,7 +143,7 @@ export default function HomePage() {
       </section>
 
       {/* Listen Section */}
-      <section className="py-16" id="listen">
+      <section className="py-20" id="listen">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h3 className="font-heading font-bold text-3xl mb-4">Ways to Listen</h3>
@@ -203,6 +201,33 @@ export default function HomePage() {
                 </Button>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="py-20" id="sponsors">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h3 className="font-heading font-bold text-3xl mb-4">Sponsors</h3>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 place-items-center">
+            <img src="images/sponsor1.png" className="max-w-50"/>
+            <img src="images/sponsor2.webp" className="max-w-50"/>
+            <img src="images/sponsor3.png" className="max-w-50"/>
+            <img src="images/sponsor4.png" className="max-w-50"/>
+            <img src="images/sponsor5.jpg" className="max-w-50"/>
+            <img src="images/sponsor6.png" className="max-w-50"/>
+            <img src="images/sponsor7.png" className="max-w-50"/>
+            <img src="images/sponsor8.png" className="max-w-50"/>
+            <img src="images/sponsor9.png" className="max-w-50"/>
+            <img src="images/sponsor10.png" className="max-w-50"/>
+            <img src="images/sponsor11.png" className="max-w-50"/>
+            <img src="images/sponsor12.jpg" className="max-w-50"/>
+            <img src="images/sponsor13.gif" className="max-w-50"/>
+            <img src="images/sponsor14.png" className="max-w-50"/>
+            <img src="images/sponsor15.jpg" className="max-w-50"/>
+            <img src="images/sponsor16.png" className="max-w-50"/>
           </div>
         </div>
       </section>
